@@ -15,5 +15,9 @@
 ## Features
 
 - The frontend is built using `React` (Typescript) as requested and styled with `Bootstrap`
-- The backend uses `NodeJS` and `PostgreSQL`. The logos are not saved to the database. Only the filename is saved for a particular record which is all that is needed to retrive it later if needed. The logos are saved in the backend directory in a folder named images which is created when the server runs.
+- The backend uses `NodeJS` and `PostgreSQL`.
+- The logos are not saved to the database.
+- Only the filename is saved for a particular record which is all that is needed to retrive it later if needed.
+- The logos are saved in the backend directory in a folder named images which is created when the server runs.
+- The Suppliers table is dropped and (re)created every time the server starts.
 

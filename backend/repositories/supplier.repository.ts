@@ -8,10 +8,7 @@ export class SupplierRepository {
 
     constructor() {
         this.db = connect();
-        // For debugging
-        // this.db.sequelize.sync({ force: true }).then(() => {
-        //     console.log("Drop and re-sync db.");
-        // });
+        this.db.sequelize.sync({ force: true });
         this.supplierRespository = this.db.sequelize.getRepository(Supplier);
     }
 
